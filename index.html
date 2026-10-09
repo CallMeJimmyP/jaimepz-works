@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jaime portfolio website showcasing projects, skills, and contact information."
+    />
+    <title>Jaime | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home">Jaime</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I’m</p>
+            <h1>Jaime</h1>
+            <p class="subtitle">Full-stack developer building useful, polished digital experiences.</p>
+            <div class="cta-row">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Profile card">
+            <div class="avatar">JP</div>
+            <div class="card-info">
+              <strong>Available for work</strong>
+              <span>Web development • UI/UX • Product builds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Designing and building thoughtful apps.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                I’m a developer focused on creating user-centered products that balance
+                strong technical execution with a clean visual experience. I enjoy
+                solving real-world problems through product thinking, modern workflows,
+                and practical engineering.
+              </p>
+              <p>
+                My work spans front-end interfaces, application architecture, and rapid
+                iteration. I’m especially interested in projects that combine usability,
+                performance, and meaningful business impact.
+              </p>
+            </div>
+            <div class="skills-panel">
+              <h3>Core skills</h3>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>React & modern front-end workflows</li>
+                <li>Node.js and API development</li>
+                <li>Responsive UI design</li>
+                <li>Git and collaborative development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb thumb-one"></div>
+              <div class="project-body">
+                <h3>Project One</h3>
+                <p>
+                  A product landing page and conversion-focused experience built for a
+                  digital-first brand.
+                </p>
+                <div class="tag-row">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb thumb-two"></div>
+              <div class="project-body">
+                <h3>Project Two</h3>
+                <p>
+                  A dashboard-style interface focused on clarity, metrics, and efficient
+                  workflows for end users.
+                </p>
+                <div class="tag-row">
+                  <span>React</span>
+                  <span>UX</span>
+                  <span>API</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb thumb-three"></div>
+              <div class="project-body">
+                <h3>Project Three</h3>
+                <p>
+                  A polished client portal experience designed around trust, usability,
+                  and consistent communication.
+                </p>
+                <div class="tag-row">
+                  <span>Design</span>
+                  <span>Front-end</span>
+                  <span>Testing</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div class="section-heading center">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something meaningful.</h2>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="https://github.com/CallMeJimmyP" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Jaime</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
