@@ -1,5 +1,5 @@
 :root {
-  --bg: #ff0000;
+  --bg: #032a52;
   --bg-soft: #111827;
   --panel: #032a52;
   --panel-soft: #f2e5c6;
@@ -25,7 +25,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--text);
-  background: #f3f4f6;
+  background: #032a52;
   line-height: 1.6;
 }
 
