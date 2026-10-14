@@ -113,12 +113,15 @@ img {
   font-size: clamp(2.8rem, 5vw, 5rem);
 }
 
-/* Center the hero copy and add a fade-in animation on page load */
+/* Center the hero copy, span the grid columns, and add a fade-in animation on page load */
 .hero-copy {
+  grid-column: 1 / -1;    /* span both columns so it's centered relative to the full container */
   display: flex;
   flex-direction: column;
   align-items: center;     /* horizontally center the text/content */
   text-align: center;      /* ensure multi-line text centers */
+  max-width: 820px;        /* optional: keeps the copy from becoming too wide */
+  margin-inline: auto;     /* centers the block within the container */
   opacity: 0;
   transform: translateY(8px);
   animation: fadeIn 700ms ease-out 150ms forwards; /* fade in when page opens */
