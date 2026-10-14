@@ -113,6 +113,31 @@ img {
   font-size: clamp(2.8rem, 5vw, 5rem);
 }
 
+/* Center the hero copy and add a fade-in animation on page load */
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* horizontally center the text/content */
+  text-align: center;      /* ensure multi-line text centers */
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeIn 700ms ease-out 150ms forwards; /* fade in when page opens */
+}
+
+/* Center any section-heading that has the 'center' helper */
+.section-heading.center {
+  margin-inline: auto;     /* center the block horizontally when it has a max-width */
+  text-align: center;      /* ensure its text is centered */
+}
+
+/* fade-in keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .subtitle {
   max-width: 620px;
   margin: 1rem 0 0;
