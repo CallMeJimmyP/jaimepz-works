@@ -286,6 +286,19 @@ img {
   font-size: 1.4rem;
 }
 
+.project-link {
+  color: var(--text);
+  transition: color 0.2s ease, text-shadow 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  color: var(--primary-strong);
+  text-shadow: 0 0 10px rgba(242, 217, 160, 0.5);
+  transform: translateY(-1px);
+}
+
 .project-body p {
   margin: 0;
   color: var(--text-soft);
