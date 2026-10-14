@@ -1,3 +1,4 @@
+/* updated styles.css with hover pop effect for project cards */
 :root {
   --bg: #032a52;
   --bg-soft: #111827;
@@ -257,6 +258,9 @@ img {
   border-radius: 22px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  /* add transition so it can "pop" smoothly */
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transform-origin: center;
 }
 
 .project-thumb {
@@ -297,6 +301,15 @@ img {
   color: var(--primary-strong);
   text-shadow: 0 0 10px rgba(242, 217, 160, 0.5);
   transform: translateY(-1px);
+}
+
+/* When hovering the project link, also "pop" the whole card up a little.
+   Uses :has() to catch the hover on the descendant link. Modern browsers
+   support :has(); if you need broader support we can add a tiny JS fallback. */
+.project-card:hover,
+.project-card:has(.project-link:hover) {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(15, 23, 42, 0.14);
 }
 
 .project-body p {
